@@ -18,15 +18,15 @@
             <a class="navigation-link" href="catalog.html">Каталог</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="purchase.html">Доставка и оплата</a>
+            <a class="navigation-link" href="#">Доставка и оплата</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="about.html">О компании</a>
+            <a class="navigation-link" href="#">О компании</a>
           </li>
         </ul>
         <ul class="navigation-list user-navigation">
           <li class="navigation-item contact-phone">
-            <a class="navigation-link" href="tel:88005558628">+7 800 555-86-28</a>
+            <a class="navigation-link" href="tel:+78005558628">+7 800 555-86-28</a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">
@@ -47,7 +47,7 @@
     </header>
 
     <main class="main-index">
-      <h1 class="visually-hidden">Магазин Глейси</h1>
+      <h1 class="visually-hidden">Магазин мороженного "Глейси"</h1>
       <section class="slider">
         <h2 class="visually-hidden">Лучшие предложения</h2>
         <div class="slider-container">
@@ -78,6 +78,25 @@
             <img src="" alt="Карамельное с маршмеллоу">
           </li>
         </ul>
+        <button class="slider-buttom slider-prev" type="button"><span class="visually-hidden">Назад</span></button>
+        <button class="slider-buttom slider-next" type="button"><span class="visually-hidden">Вперед</span></button>
+        <ol class="slider-pagination">
+          <li class="slider-pagination-item">
+            <button class="slider-pagination-button slider-pagination-button-current" type="button">
+              <span class="visually-hidden">1 слайд</span>
+            </button>
+          </li>
+          <li class="slider-pagination-item">
+            <button class="slider-pagination-button" type="button">
+              <span class="visually-hidden">2 слайд</span>
+            </button>
+          </li>
+          <li class="slider-pagination-item">
+            <button class="slider-pagination-button" type="button">
+              <span class="visually-hidden">3 слайд</span>
+            </button>
+          </li>
+        </ol>
         <ul class="social-media">
           <li>
             <a href="https://t.me/htmlacademy">
@@ -110,6 +129,7 @@
         </div>
       </section>
       <section class="taste">
+        <h2 class="section-header">Попробуйте самые популярные вкусы нашего мороженого</h2>
         <ul class="taste-list">
           <li class="taste-item card">
             <img src="" alt="" class="card-img">
@@ -142,76 +162,102 @@
         </ul>
       </section>
       <section class="seo">
-        <h2></h2>
-        <p></p>
-        <p></p>
-        <p></p>
-        <p></p>
+        <h2 class="section-header">Магазин Глейси – это онлайн и офлайн-магазин по продаже мороженого собственного производства на развес</h2>
+        <p>Всё наше мороженое изготавливается на собственном производстве с использованием современного оборудования и проверенных временем технологий.</p>
+        <p>Закупка ингредиентов производится только у проверенных фермерских хозяйств, с которыми нас связывает долговременное сотрудничество.</p>
+        <p>Для приготовления мороженого используются сливки и молоко высочайшего качества. Все ингредиенты и добавки произведены из натурального сырья.</p>
+        <p>Доставка нашего мороженого осуществляется в специальном термопаке, который не даёт мороженому растаять и позволяет сохранить превосходный вкус.</p>
       </section>
-      <section class="news"> <!--article?-->
-        <h2 class="visually-hidden"></h2>
-        <a class="news-link" href="#"></a>
+      <section class="news">
+        <h2 class="visually-hidden">Новости</h2>
+        <p>Новое в нашем блоге</p>
+        <a class="news-link" href="#">10 способов сервировки фруктовых щербетов к столу</a>
       </section>
       <section class="subscribe">
-        <p></p>
-        <form action="https://echo.htmlacademy.ru" method="post">
+        <p>Подпишитесь на нашу сладкую рассылку и будьте всегда
+          в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+        <form class="subscribe-form" action="https://echo.htmlacademy.ru" method="post">
           <input type="text" name="email" id="email" placeholder="email@example.com">
-          <input type="submit" value="Отправить">
+          <input class="button subscribe-button" type="submit" value="Отправить">
         </form>
       </section>
       <section class="delivery">
-        <h2></h2>
-        <p></p>
-        <form action="https://echo.htmlacademy.ru" method="post">
-          <p></p>
-          <label for="date">Дата</label>
-          <input type="date" name="date" id="date" placeholder="01.04.2020"> <!--тип Дата - нужен? отображается поле с дд.мм.ггг вместо плейсхолдера-->
-          <label for="phone">Телефон</label>
-          <input type="" name="phone" id="phone" placeholder="+7 800 999-00-00">
-          <label for="adress">Адрес</label>
-          <input type="text" name="adress" id="adress" placeholder="ул. Большая Конюшенная, 19/8">
-          <input type="submit" value="Отправить">
+        <h2>Доставка любимого мороженого на дом</h2>
+        <p>Хочется полакомиться любимым десертом, но нет времени съездить в магазин? Закажите доставку мороженого на дом, и курьер привезёт вам ваш заказ в течение часа!</p>
+        <p>Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.</p>
+        <form class="delivery-form" action="https://echo.htmlacademy.ru" method="post">
+          <p class="delivery-form-date">
+            <label for="delivery-date">Дата</label>
+            <input type="text" name="delivery-date" id="delivery-date" placeholder="01.04.2020">
+          </p>
+          <p class="delivery-form-phone">
+            <label for="delivery-phone">Телефон</label>
+            <input type="text" name="delivery-phone" id="delivery-phone" placeholder="+7 800 999-00-00">
+          </p>
+          <p class="delivery-form-address"></p>
+            <label for="delivery-address">Адрес</label>
+            <input type="text" name="delivery-address" id="delivery-address" placeholder="ул. Большая Конюшенная, 19/8">
+          </p>
+          <input class="button delivery-button" type="submit" value="Отправить">
         </form>
       </section>
       <section class="feedback">
-        <h2 class="visually-hidden"></h2>
-        <div class="feedback-card">
-          <p>
-            <b></b>
-          </p>
-          <p>
-            <b></b>
-          </p>
-          <button class="feedback-button">Форма обратной связи</button>
+        <h2 class="visually-hidden">Контакты и форма обратной связи</h2>
+        <div class="feedback-form">
+          <address class="feedback-address">
+            <p class="feedback-text">Адрес главного офиса и офлайн-магазина:</p>
+            <p class="feedback-text feedback-strong">наб. реки Карповки, 5 лит П, Санкт-Петербург</p>
+            <p class="feedback-text">Для заказов по телефону:</p>
+            <p class="feedback-text feedback-strong">+7 (812) 812-12-12</p>
+            <p class="feedback-text">(с 10 до 20 ежедневно)</p>
+          </address>
+          <button class="button feedback-button">Форма обратной связи</button>
         </div>
       </section>
     </main>
+
     <footer class="page-footer">
-      <ul class="social-media">
-        <li>
-          <a href="https://t.me/htmlacademy">
-            <img src="" alt="Telegram">
-          </a>
-        </li>
-        <li>
-          <a href="https://vk.com/htmlacademy">
-            <img src="" alt="Vkontakte">
-          </a>
-        </li>
-        <li>
-          <a href="https://www.youtube.com/user/htmlacademyru">
-            <img src="" alt="Youtube">
-          </a>
-        </li>
-      </ul>
-      <ul class="footer-link">
-        <li class="footer-link-item"><a href="#"></a></li>
-        <li class="footer-link-item"><a href="#"></a></li>
-        <li class="footer-link-item"><a href="#"></a></li>
-        <li class="footer-link-item"><a href="#"></a></li>
-      </ul>
-      <a href="https://htmlacademy.ru/"><img src="" alt=""></a>
-      <span>Сделано в <a href="https://htmlacademy.ru/">.html academy</a> © 2021</span>
+      <section class="footer-media">
+        <ul class="footer-media-list social-media">
+          <li>
+            <a href="https://t.me/htmlacademy">
+              <img src="" alt="Telegram">
+            </a>
+          </li>
+          <li>
+            <a href="https://vk.com/htmlacademy">
+              <img src="" alt="Vkontakte">
+            </a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/user/htmlacademyru">
+              <img src="" alt="Youtube">
+            </a>
+          </li>
+        </ul>
+     </section>
+     <section class="footer-menu">
+        <ul class="footer-menu-list">
+          <li class="footer-menu-item">
+            <a href="#">Для поставщиков</a>
+          </li>
+          <li class="footer-menu-item">
+            <a href="#">Наши документы</a>
+          </li>
+          <li class="footer-menu-item">
+            <a href="#">О производстве</a>
+          </li>
+          <li class="footer-menu-item">
+            <a href="#">Экологические стандарты</a>
+          </li>
+        </ul>
+      </section>
+      <section class="footer-copyright">
+        <a href="https://htmlacademy.ru/">
+          <img src="" alt="">
+        </a>
+        <span>Сделано в <a href="https://htmlacademy.ru/">.html academy</a> © 2021</span>
+      </section>
     </footer>
   </body>
 </html>

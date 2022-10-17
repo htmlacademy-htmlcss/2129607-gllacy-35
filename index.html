@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Глейси</title>
   </head>
   <body>
@@ -11,7 +12,7 @@
         <ul class="navigation-list">
           <li class="navigation-item ?_logo">
             <a class="navigation-link" href="#">
-              <img src="" alt="Магазин Глейси">
+              <img src="#" alt="Магазин Глейси">
             </a>
           </li>
           <li class="navigation-item">
@@ -69,13 +70,13 @@
         </div>
         <ul class="slider-img">
           <li class="slider-img-item slider-img-item-current">
-            <img src="" alt="Пломбир с клубничным джемом">
+            <img src="#" alt="Пломбир с клубничным джемом">
           </li>
           <li class="slider-img-item">
-            <img src="" alt="Сливочное с бананом">
+            <img src="#" alt="Сливочное с бананом">
           </li>
           <li class="slider-img-item">
-            <img src="" alt="Карамельное с маршмеллоу">
+            <img src="#" alt="Карамельное с маршмеллоу">
           </li>
         </ul>
         <button class="slider-buttom slider-prev" type="button"><span class="visually-hidden">Назад</span></button>
@@ -100,17 +101,17 @@
         <ul class="social-media">
           <li>
             <a href="https://t.me/htmlacademy">
-              <img src="" alt="Telegram">
+              <img src="#" alt="Telegram">
             </a>
           </li>
           <li>
             <a href="https://vk.com/htmlacademy">
-              <img src="" alt="Vkontakte">
+              <img src="#" alt="Vkontakte">
             </a>
           </li>
           <li>
             <a href="https://www.youtube.com/user/htmlacademyru">
-              <img src="" alt="Youtube">
+              <img src="#" alt="Youtube">
             </a>
           </li>
         </ul>
@@ -132,15 +133,17 @@
         <h2 class="section-header">Попробуйте самые популярные вкусы нашего мороженого</h2>
         <ul class="taste-list product-list">
           <li class="taste-item product-card">
-            <img src="" alt="" class="product-card-img">
-            <h3 class="product-card-title">Малинка</h3>
+            <a class="product-card-link" href="#">
+              <img src="#" alt="" class="product-card-img">
+              <h3 class="product-card-title">Малинка</h3>
+            </a>
             <p class="product-card-text">Сливочное мороженое с малиновым джемом</p>
             <b class="product-card-cost">310 ₽/кг</b>
             <a class="product-card-buy" href="#"></a>
           </li>
           <li class="taste-item product-card">
-            <a href="#" class="product-card-link">
-              <img src="" alt="" class="product-card-img">
+            <a class="product-card-link" href="#">
+              <img class="product-card-img" src="#" alt="">
               <h3 class="product-card-title">Фисташка</h3>
             </a>
             <p class="product-card-text">Фисташковый пломбир с кусочками шоколада</p>
@@ -148,8 +151,8 @@
             <a class="product-card-buy" href="#"></a>
           </li>
           <li class="taste-item product-card">
-            <a href="#" class="product-card-link"></a>
-              <img src="" alt="" class="product-card-img">
+            <a class="product-card-link" href="#">
+              <img class="product-card-img" src="#" alt="">
               <h3 class="product-card-title">Черника</h3>
             </a>
             <p class="product-card-text">Крем-брюле с черничным джемом</p>
@@ -157,8 +160,8 @@
             <a class="product-card-buy" href="#"></a>
           </li>
           <li class="taste-item product-card">
-            <a href="#" class="product-card-link"></a>
-              <img src="" alt="" class="product-card-img">
+            <a class="product-card-link" href="#">
+              <img class="product-card-img" src="#" alt="">
               <h3 class="product-card-title">Бабл-гам</h3>
             </a>
             <p class="product-card-text">Ванильный пломбир со сладкой посыпкой</p>
@@ -180,10 +183,11 @@
         <a class="news-link" href="#">10 способов сервировки фруктовых щербетов к столу</a>
       </section>
       <section class="subscribe">
+        <h2 class="visually-hidden">Подписка</h2>
         <p>Подпишитесь на нашу сладкую рассылку и будьте всегда
           в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
         <form class="subscribe-form" action="https://echo.htmlacademy.ru" method="post">
-          <input type="text" name="email" id="email" placeholder="email@example.com">
+          <input type="email" name="email" id="email" placeholder="email@example.com" required>
           <input class="pink-button subscribe-button" type="submit" value="Отправить">
         </form>
       </section>
@@ -194,15 +198,15 @@
         <form class="delivery-form" action="https://echo.htmlacademy.ru" method="post">
           <p class="delivery-form-date">
             <label for="delivery-date">Дата</label>
-            <input type="text" name="delivery-date" id="delivery-date" placeholder="01.04.2020">
+            <input type="text" name="delivery-date" id="delivery-date" value="01.04.2020" required>
           </p>
           <p class="delivery-form-phone">
             <label for="delivery-phone">Телефон</label>
-            <input type="text" name="delivery-phone" id="delivery-phone" placeholder="+7 800 999-00-00">
+            <input type="tel" name="delivery-phone" id="delivery-phone" placeholder="+7 800 999-00-00" required>
           </p>
-          <p class="delivery-form-address"></p>
+          <p class="delivery-form-address">
             <label for="delivery-address">Адрес</label>
-            <input type="text" name="delivery-address" id="delivery-address" placeholder="ул. Большая Конюшенная, 19/8">
+            <input type="text" name="delivery-address" id="delivery-address" placeholder="ул. Большая Конюшенная, 19/8" required>
           </p>
           <input class="pink-button delivery-button" type="submit" value="Отправить">
         </form>
@@ -227,17 +231,17 @@
         <ul class="footer-media-list social-media">
           <li>
             <a href="https://t.me/htmlacademy">
-              <img src="" alt="Telegram">
+              <img src="#" alt="Telegram">
             </a>
           </li>
           <li>
             <a href="https://vk.com/htmlacademy">
-              <img src="" alt="Vkontakte">
+              <img src="#" alt="Vkontakte">
             </a>
           </li>
           <li>
             <a href="https://www.youtube.com/user/htmlacademyru">
-              <img src="" alt="Youtube">
+              <img src="#" alt="Youtube">
             </a>
           </li>
         </ul>
@@ -260,7 +264,7 @@
       </section>
       <section class="footer-copyright">
         <a href="https://htmlacademy.ru/">
-          <img src="" alt="">
+          <img src="#" alt="">
         </a>
         <span>Сделано в <a href="https://htmlacademy.ru/">.html academy</a> © 2021</span>
       </section>

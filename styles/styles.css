@@ -1,0 +1,268 @@
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/inter-400.woff2") format("woff.2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/inter-700.woff2") format("woff.2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 900;
+  src: url("../fonts/inter-900.woff2") format("woff.2");
+  font-display: swap;
+}
+
+body {
+  font-family: "Inter", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  color: #2D3440;
+  background-color: #FEAFC3;
+}
+
+.button {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #2D3440;
+  text-decoration: none;
+  background-color: #FCFCFC;
+}
+
+.pink-button {
+  color: #FCFCFC;
+  background: #FF2F64;
+}
+
+/*Pages*/
+.page-header {
+  line-height: 20px;
+}
+
+.navigation-link {
+  color: #2D3440;
+  text-decoration: none;
+}
+
+.user-navigation {
+  font-size: 14px;
+}
+
+  /*Slider*/
+.slider-header {
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 46px;
+}
+
+.slider-text {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+/*Section header*/
+.section-header {
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 46px;
+  text-align: center;
+}
+
+/*Banners*/
+.banner {
+  background-color: #FF7799;
+}
+
+.banner-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+/*Product card*/
+.product-card {
+  background-color: #FCFCFC;
+  margin: 20px;
+}
+
+.product-card-link {
+  text-decoration: none;
+  color: #2D3440;
+}
+
+.product-card-img {
+  border-radius: 50%;
+}
+
+.product-card-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.product-card-text {
+  text-align: center;
+  color: #565C66;
+}
+
+.product-card-cost {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+/*SEO*/
+.seo {
+  background: url("../images/waffle.png") no-repeat;
+  background-size: 100% auto;
+  padding: 24px;
+}
+
+.seo-container {
+  background-color: #FFFFFF;
+  }
+
+.seo p {
+  color: #565C66;
+}
+
+/*News*/
+.news {
+  background: url("../images/news.png") no-repeat;
+  line-height: 20px;
+  color: #565C66;
+}
+
+.news-link {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: #2D3440;
+  text-decoration: none;
+}
+
+/*Subscribe*/
+.subscribe {
+  background: url("../images/post-card.png") no-repeat;
+  background-size: 100% auto;
+  padding: 6px;
+  color: #565C66;
+}
+
+.subscribe-container {
+  background-color: #FFFFFF;
+}
+
+/*Delivery*/
+.delivery {
+  background: url("../images/delivery.jpg") no-repeat;
+  background-size: 100% auto;
+  color: #565C66;
+}
+
+.delivery-container {
+  background-color: #FCFCFC;
+}
+
+/*Feedback*/
+.feedback {
+  background: url("../images/feedback.jpg") no-repeat;
+  background-size: 100% auto;
+  color: #565C66;
+ }
+
+.feedback-form {
+  background-color: #FCFCFC;
+}
+
+.feedback-address {
+  font-style: normal;
+}
+
+.feedback-strong {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #2D3440;
+}
+
+/*Footer*/
+.footer-menu-link {
+  font-size: 14px;
+  line-height: 20px;
+  color: #2D3440;
+  text-decoration: none;
+}
+
+.footer-menu-item:first-of-type {
+  font-weight: 700;
+}
+
+.footer-copyright {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.copyright-link {
+  color: #2D3440;
+  text-decoration: none;
+}
+
+/*Breadcrumbs*/
+.breadcrumbs-link {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.breadcrumbs-item:last-of-type {
+  text-decoration: underline;
+}
+
+/*Title*/
+.inner-header-title {
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 46px;
+}
+
+/*Filter*/
+.catalog-filter-title {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.filter-button {
+  background: rgba(252, 252, 252, 0.3);
+}
+
+/*Pagination*/
+.pagination-link {
+  line-height: 20px;
+  color: #2D3440;
+  text-decoration: none;
+}
+
+.pagination-disabled {
+  opacity: 0.3;
+}
+
+.pagination-current {
+  background:#FCFCFC;
+  border-radius: 50px;
+}

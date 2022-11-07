@@ -66,12 +66,12 @@
               <p class="slider-text">Натуральное мороженое из свежих сливок и молока с вкуснейшим клубничным джемом – это идеальный десерт для всей семьи.</p>
               <a class="button" href="#">Заказать</a>
             </div>
-            <div class="slider-content">
+            <div class="slider-content slider-content-next">
               <h3 class="slider-header">Сливочное мороженое со вкусом банана</h3>
               <p class="slider-text">Сливочное мороженое с ярким банановым вкусом подарит вам свежесть и наслаждение даже в самый жаркий летний день.</p>
               <a class="button" href="#">Заказать</a>
             </div>
-            <div class="slider-content">
+            <div class="slider-content slider-content-next">
               <h3 class="slider-header">Карамельный пломбир с маршмеллоу</h3>
               <p class="slider-text">Необычный сладкий десерт с карамельным топпингом и кусочками зефира завоюет сердца сладкоежек всех возрастов.</p>
               <a class="button" href="#">Заказать</a>
@@ -108,17 +108,17 @@
             </li>
           </ol>
           <ul class="social-media">
-            <li>
+            <li class="social-media-item">
               <a href="https://t.me/htmlacademy">
                 <img src="./images/icons/telegram.svg" width="24" height="24" alt="Telegram">
               </a>
             </li>
-            <li>
+            <li class="social-media-item">
               <a href="https://vk.com/htmlacademy">
                 <img src="./images/icons/vk.svg" width="24" height="24" alt="Vkontakte">
               </a>
             </li>
-            <li>
+            <li class="social-media-item">
               <a href="https://www.youtube.com/user/htmlacademyru">
                 <img src="./images/icons/youtube.svg" width="24" height="24" alt="Youtube">
               </a>
@@ -132,16 +132,20 @@
           <h2 class="section-header">Заказывайте мороженое и получайте подарки!</h2>
           <div class="banners-container">
             <div class="banner">
-              <h3 class="banner-title">Малинка даром!</h3>
-              <p class="banner-description">При покупке 2 кг любого фруктового мороженого добавим в ваш заказ банку малинового варенья бесплатно.</p>
+              <div class="banner-text">
+                <h3 class="banner-title">Малинка даром!</h3>
+                <p class="banner-description">При покупке 2 кг любого фруктового мороженого добавим в ваш заказ банку малинового варенья бесплатно.</p>
+                <a class="button" href="#">Хочу подарок</a>
+              </div>
               <img class="banner-img" src="./images/promo-berries.png" width="219" height="268" alt="Вафельный рожок с малиной">
-              <a class="button" href="#">Хочу подарок</a>
             </div>
             <div class="banner">
-              <h3 class="banner-title">Маршмеллоу даром!</h3>
-              <p class="banner-description">При покупке 2 кг пломбира добавим в ваш заказ упаковку нежных зефирок совершенно бесплатно.</p>
+              <div class="banner-text">
+                <h3 class="banner-title">Маршмеллоу даром!</h3>
+                <p class="banner-description">При покупке 2 кг пломбира добавим в ваш заказ упаковку нежных зефирок совершенно бесплатно.</p>
+                <a class="button" href="#">Хочу подарок</a>
+              </div>
               <img class="banner-img" src="./images/promo-marshmellow.png" width="219" height="268" alt="Вафельный рожок с маршмеллоу">
-              <a class="button" href="#">Хочу подарок</a>
             </div>
           </div>
         </section>
@@ -203,9 +207,11 @@
         <div class="wrap">
           <!--Новости блога-->
           <section class="news">
-            <h2 class="visually-hidden">Новости</h2>
-            <p>Новое в нашем блоге</p>
-            <a class="news-link" href="#">10 способов сервировки фруктовых щербетов к столу</a>
+            <div class="news-container">
+              <h2 class="visually-hidden">Новости</h2>
+              <p>Новое в нашем блоге</p>
+              <a class="news-link" href="#">10 способов сервировки фруктовых щербетов к столу</a>
+            </div>
           </section>
 
           <!--Подписка-->
@@ -224,9 +230,11 @@
 
         <!--Доставка-->
         <section class="delivery">
-          <h2>Доставка любимого мороженого на дом</h2>
-          <p>Хочется полакомиться любимым десертом, но нет времени съездить в магазин? Закажите доставку мороженого на дом, и курьер привезёт вам ваш заказ в течение часа!</p>
-          <div class="delivery-container">
+          <div class="delivery-wrap">
+            <h2>Доставка любимого мороженого на дом</h2>
+            <p>Хочется полакомиться любимым десертом, но нет времени съездить в магазин? Закажите доставку мороженого на дом, и курьер привезёт вам ваш заказ в течение часа!</p>
+          </div>
+          <div class="delivery-form-container">
             <p>Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.</p>
             <form class="delivery-form" action="https://echo.htmlacademy.ru" method="post">
               <p class="delivery-form-date">
@@ -269,17 +277,17 @@
         <!--Соцсети-->
         <div class="footer-media">
           <ul class="footer-media-list social-media">
-            <li>
+            <li class="social-media-item">
               <a href="https://t.me/htmlacademy">
                 <img src="./images/icons/telegram.svg" width="24" height="24" alt="Telegram">
               </a>
             </li>
-            <li>
+            <li class="social-media-item">
               <a href="https://vk.com/htmlacademy">
                 <img src="./images/icons/vk.svg" width="24" height="24" alt="Vkontakte">
               </a>
             </li>
-            <li>
+            <li class="social-media-item">
               <a href="https://www.youtube.com/user/htmlacademyru">
                 <img src="./images/icons/youtube.svg" width="24" height="24" alt="Youtube">
               </a>

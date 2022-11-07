@@ -73,7 +73,7 @@
         <section class="catalog-products">
           <h2 class="visually-hidden" hidden>Список товаров и фильтры</h2>
           <!--Сортировка и фильтры-->
-          <form action="https://echo.htmlacademy.ru/" method="get" class="catalog-filter">
+          <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
 
             <fieldset class="catalog-filter-group">
               <legend class="catalog-filter-title">Сортировка:</legend>
@@ -275,35 +275,36 @@
           </ul>
 
           <!--Навигация по каталогу-->
-          <button class="show-more white-button" type="button">Показать еще</button>
-          <ul class="pagination">
-            <li class="pagination-item">
-              <a class="pagination-link pagination-prev pagination-disabled" href="#">
-                <span class="visually-hidden">Предыдущая страница</span>
-              </a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link pagination-current" href="#">1</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">2</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">3</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">4</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">5</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link pagination-next" href="#">
-                <span class="visually-hidden">Следующая страница</span>
-              </a>
-            </li>
-          </ul>
-
+          <div class="pagination-container">
+            <button class="show-more white-button" type="button">Показать еще</button>
+            <ul class="pagination">
+              <li class="pagination-item">
+                <a class="pagination-link pagination-prev pagination-disabled" href="#">
+                  <span class="visually-hidden">Предыдущая страница</span>
+                </a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link pagination-current" href="#">1</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">2</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">3</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">4</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">5</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link pagination-next" href="#">
+                  <span class="visually-hidden">Следующая страница</span>
+                </a>
+              </li>
+            </ul>
+          </div>
         </section>
       </div>
     </main>
@@ -313,17 +314,17 @@
         <!--Соцсети-->
         <div class="footer-media">
           <ul class="footer-media-list social-media">
-            <li>
+            <li class="social-media-item">
               <a href="https://t.me/htmlacademy">
                 <img src="./images/icons/telegram.svg" width="24" height="24" alt="Telegram">
               </a>
             </li>
-            <li>
+            <li class="social-media-item">
               <a href="https://vk.com/htmlacademy">
                 <img src="./images/icons/vk.svg" width="24" height="24" alt="Vkontakte">
               </a>
             </li>
-            <li>
+            <li class="social-media-item">
               <a href="https://www.youtube.com/user/htmlacademyru">
                 <img src="./images/icons/youtube.svg" width="24" height="24" alt="Youtube">
               </a>

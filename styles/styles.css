@@ -38,6 +38,14 @@ body {
   background-color: #FEAFC3;
 }
 
+.blue-theme {
+  background-color: #69A9FF;
+}
+
+.gold-theme {
+  background-color: #FCC850;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -81,7 +89,9 @@ body {
 
 .navigation-list {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
+  max-width: 50%;
   margin: 0;
   padding: 0;
   list-style-type: none;
@@ -316,6 +326,7 @@ section:last-child {
   color: #565C66;
   padding: 64px;
   padding-left: 100px;
+  border-radius: 16px;
 }
 
 .delivery-wrap {
@@ -344,6 +355,7 @@ section:last-child {
   background-size: 100% auto;
   color: #565C66;
   padding: 64px;
+  border-radius: 16px;
  }
 
 .feedback-form {
@@ -367,6 +379,7 @@ section:last-child {
 /*Footer*/
 .page-footer-container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   width: 1170px;
   margin: 0 auto;
@@ -487,6 +500,7 @@ section:last-child {
 
 .pagination {
   display: flex;
+  flex-wrap: wrap;
   padding: 0;
   margin: 0;
   margin-left: auto;

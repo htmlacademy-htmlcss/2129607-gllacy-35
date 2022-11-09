@@ -213,21 +213,37 @@ section:last-child {
   margin: 0;
 }
 
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(4, 270px);
+  gap: 40px 30px;
+  margin-bottom: 16px;
+}
+
 .product-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: #FCFCFC;
   margin: 0;
-  width: 270px;
   border-radius: 8px;
 }
 
-.product-card-link {
+.product-card-content {
+  display: flex;
+  flex-direction: column;
+  /*align-items: center;*/
+  flex-grow: 1;
+  padding: 0 40px 24px; /*top l+r bottom*/
+}
+
+.product-card-title-link {
   text-decoration: none;
   color: #2D3440;
 }
 
-.product-card-img {
+.product-card-image {
   border-radius: 50%;
-  margin: 0 auto;
 }
 
 .product-card-title {
@@ -235,17 +251,37 @@ section:last-child {
   font-size: 20px;
   line-height: 24px;
   text-align: center;
+  margin: 0;
+  margin-bottom: 8px;
 }
 
 .product-card-text {
-  text-align: center;
   color: #565C66;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 16px;
+}
+
+.product-card-buy-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+  padding: 4px 0;
 }
 
 .product-card-cost {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
+}
+
+/*Временная подложка для визуализации*/
+.product-card-buy {
+  width: 32px;
+  height: 32px;
+  background-color: #FF2F64;
+  border-radius: 50%;
 }
 
 /*SEO*/
@@ -303,6 +339,7 @@ section:last-child {
 .subscribe {
   background: url("../images/post-card.png") no-repeat;
   background-size: 100% auto;
+  border-radius: 16px;
   padding: 6px;
   margin-bottom: 0;
   color: #565C66;
@@ -312,15 +349,21 @@ section:last-child {
 .subscribe-container {
   background-color: #FFFFFF;
   padding: 26px;
+  border-radius: 16px;
 }
 
 .subscribe-container p {
   margin: 0;
 }
 
+.subscribe-form {
+  margin-top: 42px;
+}
+
 /*Delivery*/
 .delivery {
   display: flex;
+  justify-content: space-between;
   background: url("../images/delivery.jpg") no-repeat;
   background-size: 100% auto;
   color: #565C66;
@@ -334,19 +377,55 @@ section:last-child {
   margin-top: 103px;
 }
 
-.delivery h2 {
+.delivery-header {
   color: #2D3440;
   margin: 0;
   margin-bottom: 24px;
 }
 
-.delivery p {
+.delivery-text {
   margin: 0;
 }
 
 .delivery-form-container {
   background-color: #FCFCFC;
+  width: 500px;
   border-radius: 8px;
+  padding: 40px;
+  padding-bottom: 42px;
+}
+
+.delivery-form {
+  display: grid;
+  outline: 1px dotted #000;
+  grid-template-columns: 117px 287px;
+  gap: 20px 16px;
+}
+
+.field-group {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+.form-label {
+  line-height: 20px;
+  font-weight: 700;
+  color: #2D3440;
+  padding-bottom: 8px;
+}
+
+.info {
+  display: none;
+}
+
+.delivery-form-address {
+  grid-column: 1 / -1;
+}
+
+.delivery-button {
+  grid-column: 1 / -1;
+  justify-self: center;
 }
 
 /*Feedback*/
@@ -400,10 +479,13 @@ section:last-child {
 }
 
 .footer-menu {
-  max-width: 360px;
+  max-width: 370px;
 }
 
 .footer-menu-list {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 8px 24px;
   padding: 0;
   margin: 0;
   list-style-type: none;
@@ -424,6 +506,12 @@ section:last-child {
   max-width: 200px;
   font-size: 12px;
   line-height: 16px;
+  margin-bottom: 48px;
+}
+
+.footer-copyright-logo {
+  display: block;
+  margin-bottom: 14px;
 }
 
 .copyright-link {
@@ -474,6 +562,8 @@ section:last-child {
 
 /*Filter*/
 .catalog-filter {
+  display: flex;
+  flex-wrap: wrap;
   margin-bottom: 44px;
 }
 
@@ -482,23 +572,33 @@ section:last-child {
   line-height: 20px;
 }
 
+.catalog-filter-list {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
 .filter-button {
   background: rgba(252, 252, 252, 0.3);
 }
 
-/*Product List*/
-.product-list {
-  margin-bottom: 16px;
-}
-
 /*Pagination*/
 .pagination-container {
-  /*display: grid;*/
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
   padding: 41px;
   padding-right: 0;
 }
 
+.show-more {
+  grid-column: 2 / 3;
+  justify-self: center;
+}
+
 .pagination {
+  grid-column: 3 / 4;
   display: flex;
   flex-wrap: wrap;
   padding: 0;

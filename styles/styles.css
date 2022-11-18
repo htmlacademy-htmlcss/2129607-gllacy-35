@@ -752,52 +752,20 @@ body {
   padding-left: 64px;
 }
 
-.seo-text:first-child::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 5px;
-  width: 48px;
-  height: 48px;
-  background: url("..//images/icons/ice-cream.svg") no-repeat 50%;
-  border: 2px solid #2D3440;
-  border-radius: 50%;
+.ice-cream-icon {
+  background: url("../images/icons/ice-cream.svg") no-repeat left top;
 }
 
-.seo-text:nth-child(2)::before {
-  content: "";
-  position: absolute;
-  left: 540px;
-  top: 5px;
-  width: 48px;
-  height: 48px;
-  background: url("..//images/icons/cow.svg") no-repeat 50%;
-  border: 2px solid #2D3440;
-  border-radius: 50%;
+.cow-icon {
+  background: url("../images/icons/cow.svg") no-repeat left top;
 }
 
-.seo-text:nth-child(3)::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 113px;
-  width: 48px;
-  height: 48px;
-  background: url("..//images/icons/leaf.svg") no-repeat 50%;
-  border: 2px solid #2D3440;
-  border-radius: 50%;
+.leaf-icon {
+  background: url("../images/icons/leaf.svg") no-repeat left top;
 }
 
-.seo-text:last-child::before {
-  content: "";
-  position: absolute;
-  left: 540px;
-  top: 113px;
-  width: 48px;
-  height: 48px;
-  background: url("..//images/icons/thermometer.svg") no-repeat 50%;
-  border: 2px solid #2D3440;
-  border-radius: 50%;
+.thermometr-icon {
+  background: url("../images/icons/thermometr.svg") no-repeat left top;
 }
 
 /*Wrap*/
@@ -945,7 +913,7 @@ body {
 .delivery-form-container {
   background-color: #FCFCFC;
   width: 500px;
-  height: 406px;
+  height: min-content;
   box-sizing: border-box;
   border-radius: 8px;
   padding: 40px;

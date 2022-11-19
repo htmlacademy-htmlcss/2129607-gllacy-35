@@ -469,6 +469,10 @@ body {
   padding: 5px 0;
 }
 
+.button-active.navigation-link-catalog svg {
+  transform: rotate(180deg) translateY(-14%);
+}
+
 /*Container*/
 .main-container {
   flex-grow: 1;
